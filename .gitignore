@@ -1,0 +1,4 @@
+node_modules
+assets/coinList.json
+assets/networkList.json
+package-lock.json
