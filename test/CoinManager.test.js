@@ -13,7 +13,7 @@ describe('CoinManager', () => {
     });
 
     test('should generate a coin file', () => {
-        coinManager.generateCoinFile('./assets/coinList.json', './assets/networkList.json')
+        coinManager.generateCoinFile('./assets/coinList.json', './assets/networkList.json', './assets/trieData.json')
         expect(true).toBe(true);
     });
 
