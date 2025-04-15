@@ -22,4 +22,10 @@ describe('CoinManager', () => {
         coinManager.suggest('tether');
         expect(true).toBe(true);
     });
+
+    test('should suggest some coins with network', () => {
+        coinManager.loadCoinFile('./assets/trieData.json')
+        coinManager.suggest('tether', 'bsc');
+        expect(true).toBe(true);
+    });
 });

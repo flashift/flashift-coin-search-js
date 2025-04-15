@@ -1,5 +1,6 @@
 node_modules
 assets/coinList.json
 assets/networkList.json
+assets/coinList-new.json
 package-lock.json
 .DS_Store
