@@ -28,4 +28,10 @@ describe('CoinManager', () => {
         coinManager.suggest('tether', 'bsc');
         expect(true).toBe(true);
     });
+
+    test('should suggest some coins with erc20', () => {
+        coinManager.loadCoinFile('./assets/trieData.json')
+        coinManager.suggest('tethererc20');
+        expect(true).toBe(true);
+    });
 });
