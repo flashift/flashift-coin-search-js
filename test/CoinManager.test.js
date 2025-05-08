@@ -28,6 +28,12 @@ describe('CoinManager', () => {
         expect(true).toBe(true);
     });
 
+    test('should suggest some coins', () => {
+        coinManager.loadCoinTrie(trieData);
+        coinManager.suggest('testesttest');
+        expect(true).toBe(true);
+    });
+
     test('should suggest some coins from Object', () => {
         coinManager.loadCoinTrie(trieData);
         coinManager.suggest('tether');
